@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="utf-8">
+    <title>DIC cafe</title>
+    <link rel="stylesheet" href="./asset/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+  </head>
+
+  <body class="backgroundImage">
+    <header>
+      <nav class="header_nav">
+        <a href="index.html" class="logo"><img src="./asset/Images/sample_logo_k.png"></a>
+        <ul class="global_nav">
+          <a href="index.html" class="global_nav_item">
+            <li>Home</li>
+          </a>
+          <a href="#menu" class="global_nav_item">
+            <li>Menu</li>
+          </a>
+          <a href="contact.html" class="global_nav_item">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <section class="titleSection">
+      <h1>vente de grains de café</h1>
+    </section>
+    <section id="coffeMenu">
+      <h1 class="menu_title">s'aligner</h1>
+      <div id="coffeMenuList">
+        <div class="coffeMenuListItem">
+          <div>
+            <img src="./asset/Images/sample_cafe1.jpg" class="caffee_menu_image">
+            <div class="price">
+              <h2>Blended coffee</h2>
+              <p>¥400</p>
+            </div>
+          </div>
+          <div>
+            <img src="./asset/Images/sample_cafe2.jpg" class="caffee_menu_image">
+            <div class="price">
+              <h2>Latte art</h2>p
+              <p>¥500</p>
+            </div>
+          </div>
+        </div>
+        <div class="coffeMenuListItem">
+          <div>
+            <img src="./asset/Images/sample_cafe3.jpg" class="caffee_menu_image">
+            <div class="price">
+              <h2>cafe latte</h2>
+              <p>¥450</p>
+            </div>
+          </div>
+          <div>
+            <img src="./asset/Images/sample_cafe4.jpg" class="caffee_menu_image">
+            <div class="price">
+              <h2>Ice coffee</h2>
+              <p>¥350</p>
+            </div>
+          <div>
+        </div>
+      </div>
+    </section>
+    <article id="infosLivraisons">
+      <h2>Informations sur la livraison</h2>
+      <ul>
+        <li>Les frais d'expédition sont de 500 yens si le montant total est inférieur à 2 000 yens.</li>
+        <li>250 yens pour les commandes supérieures à 2 000 yens</li>
+        <li>Gratuit pour les commandes supérieures à 3 000 yens</li>
+      </ul>
+    </article>
+    <section id="formSection">
+      <form>
+        <h1>Commande</h1>
+        <p>Veuillez sélectionner un produit
+        </p>
+        <div>
+          <select id="product" required>
+            <option hidden value="0">Veuillez sélectionner</option>
+            <option value="500">Mélange original 200g 500yen</option>
+            <option value="900">Mélange original 500g 900yen</option>
+            <option value="700">Mélange original 200g 700yen</option>
+            <option value="1200">Mélange original 500g 1200yen</option>
+          </select>
+          <p>Veuillez sélectionner la quantité
+          </p>
+          <input type="number" min="1" max="5" id="number" value="1" required>
+        </div>
+        <br>
+        <div class="buttons">
+          <input type="button" class="btn" value="Montant total" onclick="calc()">
+          <input type="button" class="btn" value="à ajouter" onclick="add()">
+        </div>
+      </form>
+    </section>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href=""> <img src="./asset/Images/sample_logo_w.png"></a></li>
+        </ul>
+      </nav>
+      <p>© DIVIC Corp. All RIGHTS RESERVED.</p>
+    </footer>
+  </body>
+
+</html>
