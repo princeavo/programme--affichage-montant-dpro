@@ -30,7 +30,7 @@ const products = [
 ];
 
 function add() {
-  userProductId = productFormSelect.value;
+  userProductId = +productFormSelect.value;
   if (userProductId !== 0) {
     const product = products.filter(
       (product) => product.id === +userProductId
@@ -42,7 +42,7 @@ function add() {
     obj["id"] = +userProductId;
     obj["nom"] = product.nom;
     obj["prix"] = product.prix;
-    obj["qte"] = 1;
+    obj["qte"] = userProductNumber;
     obj["subTotalPrice"] = obj["qte"] * obj["prix"];
     obj["suff"] = "item";
 
@@ -52,7 +52,7 @@ function add() {
     if (product2.length == 0) {
       userChoices.push(obj);
     } else {
-      product2[0].qte++;
+      product2[0].qte += userProductNumber;
       obj["subTotalPrice"] = obj["qte"] * obj["prix"];
       obj["suff"] = "items";
     }
