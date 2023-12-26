@@ -71,3 +71,7 @@ function add() {
     // console.log(userChoices);
   }
 }
+
+function calc() {
+  alert(`Total price: ${totalPrice}`);
+}
